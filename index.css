@@ -1,0 +1,155 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: #e3d7cc;
+    height: 100%;
+}
+
+.container{
+    height: 100%;
+    position: relative;
+    display: flex;
+    border: 5px solid #999189;
+}
+/* EN TETE DU JEU */
+
+.en-tete {
+
+    width: 50%;
+    height: 12%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: #bab0a7;
+    border-radius: 5px;
+    /*border: 5px solid green;*/
+    position: absolute;
+
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#score{
+    text-align: center;
+}
+
+
+
+#canvascontainer{
+    position: absolute;
+    margin-left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    /*border: 5px solid blue;*/
+    background-color: #999189;
+}
+
+
+/* BOUTON RESTART */
+#start {
+    position: absolute;
+    background-color: #bab0a7;
+    font-size: 20px;
+    border: 2px solid #999189;
+    height: 7%;
+    width: 15%;
+    margin-left: 50%;
+    border-radius: 5px;
+    transform: translateX(-50%);
+    top: 17%;
+}
+
+#start:hover{
+    color: white;
+    width: 16%;
+    height: 8%;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 1s, color 1s;
+}
+
+/* EXPLICATION */
+
+.explication {
+    position: absolute;
+    width: 75%;
+    height: 10%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    /*border: 5px solid red;*/
+}
+
+h3,p {
+    text-align: center;
+}
+
+@media screen and (max-height: 500px){
+    .explication{
+        bottom: 3%;
+        font-size: 80%;
+    }
+    canvas{width: 300px;
+    height: 300px;}
+}
+
+@media screen and (max-width: 640px), (max-height: 480px) {
+    canvas{width: 250px;
+        height: 250px;}
+    #start{
+        width: 80px;
+        height: 20px;
+        font-size: 8px;
+        top:10%;
+    }
+    #canvascontainer{
+        margin-top: 20%;
+        transform: translateY(50%), translateX(-50%);
+        position: absolute;
+    }
+    .explication{
+        font-size: 60%;
+    }
+    h1{
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .explication{
+        font-size: 70%;
+        bottom: 3%;
+        color: red; 
+    }
+    #canvascontainer{
+        bottom: 20%;
+    }
+    #start{
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+        top:15%; 
+    }
+}
+@media screen and (max-width: 320px), (max-height: 240px) {
+    canvas{width: 150px;
+        height: 150px;}
+
+    #canvascontainer{
+        bottom: 20%
+    }
+    .explication{
+        font-size: 50%;
+    }
+
+@media screen and (max-width: 900px) and (min-width: 640px) {
+    #canvascontainer{
+        bottom: 0%;
+    }
+}

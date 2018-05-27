@@ -1,0 +1,39 @@
+<!--  Fait en collaboration avec Néphéline. Son Github : https://github.com/NezFeeLitNoeud -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href="index.css" rel="stylesheet">
+  <title>2048</title>
+</head>
+<body>
+    <div class="container"><!-- HAUT/EN-TETE-->
+      <div class="en-tete">
+        <h1> 2048 </h1>
+  
+        <p>Score : <span id="score">0</span> </p>
+      </div>
+          
+  
+  
+  <!-- MILIEUX/CONTENU DU JEU -->
+      <div id="canvascontainer">
+        <canvas id="canvas" width="350" height="350"></canvas>
+      </div>
+  
+  <input id="start" type="button" value="Nouvelle Partie">
+    <!-- BAS/EXPLICATION -->
+    <div class="explication">
+        <h3>Comment jouer : </h3>
+        <p> 
+         Utilisez les flèches de votre clavier pour faire bouger les carrés de chiffre et ainsi les additionner ensemble jusqu'a atteindre 2048.
+        </p>
+    </div>
+      <script src="script/Main.js"></script>
+      <script src="script/creation_cellule2.js"></script>
+      <script src="script/Mouvement_clavier.js"></script>
+      <script src="script/Fin_du_jeu.js"></script>
+      <script src="script/restart.js"></script>
+    </div>
+  </body>
+</html>
